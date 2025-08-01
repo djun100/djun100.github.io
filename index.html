@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="移动应用开发资源 - 博客和隐私政策模板">
+    <title>移动应用开发资源</title>
+    
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin: 0 0 15px 0;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .header p {
+            font-size: 18px;
+            color: #7f8c8d;
+            margin: 0;
+        }
+        
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .nav-card {
+            background: #fff;
+            border: 1px solid #e1e4e8;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .nav-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+        
+        .nav-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        
+        .nav-card .icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .nav-card h3 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin: 0 0 15px 0;
+        }
+        
+        .nav-card p {
+            color: #7f8c8d;
+            margin: 0 0 25px 0;
+            line-height: 1.6;
+        }
+        
+        .nav-card .features {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 25px 0;
+            text-align: left;
+        }
+        
+        .nav-card .features li {
+            color: #27ae60;
+            margin: 8px 0;
+            position: relative;
+            padding-left: 20px;
+            font-size: 14px;
+        }
+        
+        .nav-card .features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+            color: #fff;
+        }
+        
+        .footer {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .stat-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .stat-number {
+            font-size: 28px;
+            font-weight: 700;
+            color: #667eea;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-top: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 28px;
+            }
+            
+            .nav-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .nav-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 移动应用开发资源</h1>
+            <p>博客系统 & 隐私政策模板一站式解决方案</p>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-number">4+</span>
+                <div class="stat-label">隐私政策模板</div>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <div class="stat-label">法律合规</div>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">Jekyll</span>
+                <div class="stat-label">博客系统</div>
+            </div>
+        </div>
+
+        <div class="nav-grid">
+            <div class="nav-card">
+                <span class="icon">📝</span>
+                <h3>个人博客</h3>
+                <p>基于Jekyll构建的完整博客系统，包含文章管理、标签分类、评论系统等功能。</p>
+                <ul class="features">
+                    <li>响应式设计</li>
+                    <li>文章分类和标签</li>
+                    <li>评论系统集成</li>
+                    <li>RSS订阅支持</li>
+                    <li>PWA功能</li>
+                </ul>
+                <a href="blog/" class="btn">进入博客</a>
+            </div>
+
+            <div class="nav-card">
+                <span class="icon">🛡️</span>
+                <h3>隐私政策模板</h3>
+                <p>专为移动应用设计的隐私政策模板集合，符合国内外法规要求，开箱即用。</p>
+                <ul class="features">
+                    <li>多种风格模板</li>
+                    <li>完全法律合规</li>
+                    <li>移动端优化</li>
+                    <li>真实案例参考</li>
+                    <li>详细使用说明</li>
+                </ul>
+                <a href="privacy/" class="btn">查看模板</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>💡 所有资源均可免费使用，遵循MIT开源协议</p>
+            <p>🔗 部署在GitHub Pages，全球CDN加速访问</p>
+            <p>📧 如有问题或建议，欢迎通过GitHub Issues联系</p>
+        </div>
+    </div>
+</body>
+</html> 

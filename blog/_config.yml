@@ -5,8 +5,8 @@ header-img: img/post-bg-desk.jpg
 email: djun100@qq.com
 description: "Every failure is leading towards success."
 keyword: "王学超的博客, wangxuechao, 王学超, Android"
-url: "http://djun100.github.io"          # your host, for absolute URL
-baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
+url: "https://djun100.github.io"          # your host, for absolute URL
+baseurl: "/blog"      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/qiubaiying/qiubaiying.github.io.git" # you code repository
 
 # Sidebar settings
