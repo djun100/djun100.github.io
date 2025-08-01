@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <meta name="author" content="{{ page.author | default: site.author }}">
+    <title>{{ page.title | default: site.title }}</title>
+    
+    <!-- Custom CSS for Legal Documents -->
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .legal-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 40px;
+            background: #fff;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+        }
+        
+        .legal-header {
+            text-align: center;
+            border-bottom: 2px solid #e1e4e8;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .legal-header h1 {
+            font-size: 28px;
+            font-weight: 600;
+            color: #24292e;
+            margin: 0 0 10px 0;
+        }
+        
+        .legal-header .last-updated {
+            color: #586069;
+            font-size: 14px;
+            font-style: italic;
+        }
+        
+        .legal-content h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #24292e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eaecef;
+            padding-bottom: 8px;
+        }
+        
+        .legal-content h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #24292e;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        
+        .legal-content p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        .legal-content ul, .legal-content ol {
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+        
+        .legal-content li {
+            margin-bottom: 8px;
+        }
+        
+        .legal-content strong {
+            font-weight: 600;
+            color: #24292e;
+        }
+        
+        .legal-content hr {
+            border: none;
+            border-top: 1px solid #e1e4e8;
+            margin: 30px 0;
+        }
+        
+        .legal-footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e1e4e8;
+            text-align: center;
+            color: #586069;
+            font-size: 14px;
+        }
+        
+        .contact-info {
+            background: #f6f8fa;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .contact-info h3 {
+            margin-top: 0;
+            color: #24292e;
+        }
+        
+        .usage-note {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 6px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .usage-note h3 {
+            margin-top: 0;
+            color: #856404;
+        }
+        
+        @media (max-width: 768px) {
+            .legal-container {
+                margin: 20px;
+                padding: 20px;
+                border: none;
+                border-radius: 0;
+                box-shadow: none;
+            }
+        }
+        
+        @media print {
+            .legal-container {
+                max-width: none;
+                margin: 0;
+                padding: 20px;
+                border: none;
+                box-shadow: none;
+            }
+            
+            .usage-note {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="legal-container">
+        <div class="legal-header">
+            <h1>{{ page.title }}</h1>
+            {% if page.last_updated %}
+            <div class="last-updated">最后更新：{{ page.last_updated }}</div>
+            {% endif %}
+        </div>
+        
+        <div class="legal-content">
+            {{ content }}
+        </div>
+        
+        <div class="legal-footer">
+            <p>本文档由 <a href="{{ site.url }}">{{ site.title }}</a> 提供</p>
+        </div>
+    </div>
+</body>
+</html> 
